@@ -1,0 +1,42 @@
+<project>
+ <properties autorotation="0" encrypt="0" fps="60" scaleMode="3" mouseToTouch="1" iosDevice="0" packageName="com.yourdomain.yourapp" logicalHeight="480" logicalWidth="320" mouseTouchOrder="0" retinaDisplay="0" touchToMouse="1" assetsOnly="0" orientation="0" architecture="0">
+  <imageScales/>
+ </properties>
+ <folder name="examples">
+  <folder name="Audio_Example">
+   <file source="examples/Audio_Example/1-up.png"/>
+   <file source="examples/Audio_Example/1-down.png"/>
+   <file source="examples/Audio_Example/2-up.png"/>
+   <file source="examples/Audio_Example/2-down.png"/>
+   <file source="examples/Audio_Example/3-up.png"/>
+   <file source="examples/Audio_Example/3-down.png"/>
+   <file source="examples/Audio_Example/1.wav"/>
+   <file source="examples/Audio_Example/2.wav"/>
+   <file source="examples/Audio_Example/3.wav"/>
+   <file source="examples/Audio_Example/soundbutton.lua"/>
+   <file source="examples/Audio_Example/Audio_Example.lua"/>
+  </folder>
+  <folder name="Bird_Animation">
+   <file source="examples/Bird_Animation/gfx/bird_black_01.png"/>
+   <file source="examples/Bird_Animation/gfx/bird_black_02.png"/>
+   <file source="examples/Bird_Animation/gfx/bird_black_03.png"/>
+   <file source="examples/Bird_Animation/gfx/bird_white_01.png"/>
+   <file source="examples/Bird_Animation/gfx/bird_white_02.png"/>
+   <file source="examples/Bird_Animation/gfx/bird_white_03.png"/>
+   <file source="examples/Bird_Animation/gfx/sky_world.png"/>
+   <file source="examples/Bird_Animation/bird.lua"/>
+   <file source="examples/Bird_Animation/Bird_Animation.lua"/>
+  </folder>
+  <folder name="Button_Example">
+   <file source="examples/Button_Example/button_down.png"/>
+   <file source="examples/Button_Example/button_up.png"/>
+   <file source="examples/Button_Example/Button_Example.lua"/>
+  </folder>
+ </folder>
+ <folder name="libs">
+  <file source="libs/button.lua"/>
+  <file source="libs/scenemanager.lua"/>
+ </folder>
+ <file source="main.lua"/>
+ <file source="start.lua"/>
+</project>
