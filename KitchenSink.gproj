@@ -1,5 +1,5 @@
 <project>
- <properties autorotation="0" encrypt="0" fps="60" scaleMode="3" mouseToTouch="1" iosDevice="0" packageName="com.yourdomain.yourapp" logicalHeight="480" logicalWidth="320" mouseTouchOrder="0" retinaDisplay="0" touchToMouse="1" assetsOnly="0" orientation="0" architecture="0">
+ <properties logicalHeight="480" packageName="com.yourdomain.yourapp" touchToMouse="1" mouseTouchOrder="0" retinaDisplay="0" encrypt="0" logicalWidth="320" orientation="0" autorotation="0" scaleMode="3" assetsOnly="0" fps="60" architecture="0" mouseToTouch="1" iosDevice="0">
   <imageScales/>
  </properties>
  <folder name="examples">
@@ -31,6 +31,23 @@
    <file source="examples/Button_Example/button_down.png"/>
    <file source="examples/Button_Example/button_up.png"/>
    <file source="examples/Button_Example/Button_Example.lua"/>
+  </folder>
+  <folder name="Render_Target">
+   <file source="examples/Render_Target/Render_Target.lua"/>
+   <file source="examples/Render_Target/crate.png"/>
+  </folder>
+  <folder name="Native_Json">
+   <file source="examples/Native_Json/test_data.json"/>
+   <file source="examples/Native_Json/Native_Json.lua"/>
+  </folder>
+  <folder name="Texture_16bit">
+   <file source="examples/Texture_16bit/Texture_16bit.lua"/>
+   <file source="examples/Texture_16bit/image_4444.png"/>
+   <file source="examples/Texture_16bit/image.png"/>
+  </folder>
+  <folder name="Texture_Formats">
+   <file source="examples/Texture_Formats/Texture_Formats.lua"/>
+   <file source="examples/Texture_Formats/crate.png"/>
   </folder>
  </folder>
  <folder name="libs">

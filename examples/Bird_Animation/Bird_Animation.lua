@@ -12,6 +12,7 @@ Bird_Animation = Core.class(Sprite)
 
 function Bird_Animation:init()
 
+application:setOrientation(Application.LANDSCAPE_LEFT)
 -- load texture, create bitmap from it and set as background
 local background = Bitmap.new(Texture.new("examples/Bird_Animation/sky_world.png"))
 self:addChild(background)

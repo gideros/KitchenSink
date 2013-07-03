@@ -1,6 +1,8 @@
 StartScene = Core.class(Sprite)
 
 function StartScene:init()
+	application:setOrientation(Application.PORTRAIT)
+	application:setBackgroundColor(0xffffff)
 	self.startX = 20
 	self.startY = 20
 	self.scale = 2
