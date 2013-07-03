@@ -1,5 +1,5 @@
 <project>
- <properties logicalHeight="480" packageName="com.yourdomain.yourapp" touchToMouse="1" mouseTouchOrder="0" retinaDisplay="0" encrypt="0" logicalWidth="320" orientation="0" autorotation="0" scaleMode="3" assetsOnly="0" fps="60" architecture="0" mouseToTouch="1" iosDevice="0">
+ <properties architecture="0" fps="60" mouseTouchOrder="0" packageName="com.yourdomain.yourapp" mouseToTouch="1" iosDevice="0" assetsOnly="0" touchToMouse="1" orientation="0" logicalHeight="480" logicalWidth="320" autorotation="0" scaleMode="3" retinaDisplay="0" encrypt="0">
   <imageScales/>
  </properties>
  <folder name="examples">
@@ -46,8 +46,12 @@
    <file source="examples/Texture_16bit/image.png"/>
   </folder>
   <folder name="Texture_Formats">
+   <file source="examples/Texture_Formats/image_rgba8888.png"/>
+   <file source="examples/Texture_Formats/image_rgba5551.png"/>
+   <file source="examples/Texture_Formats/image_rgba4444.png"/>
+   <file source="examples/Texture_Formats/image_rgb888.png"/>
+   <file source="examples/Texture_Formats/image_rgb565.png"/>
    <file source="examples/Texture_Formats/Texture_Formats.lua"/>
-   <file source="examples/Texture_Formats/crate.png"/>
   </folder>
  </folder>
  <folder name="libs">

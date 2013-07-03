@@ -1,27 +1,29 @@
 Texture_Formats = Core.class(Sprite)
 
 function Texture_Formats:init()
-	local bmp0 = Bitmap.new(Texture.new("examples/Texture_Formats/crate.png"))
-	bmp0:setPosition(0, 50)
-	self:addChild(bmp0)
+	application:setBackgroundColor(0xc0c0c0)
+
+	local textures = {}
 	
-	local bmp1 = Bitmap.new(Texture.new("examples/Texture_Formats/crate.png", false, {format = TextureBase.RGBA8888}))
-	bmp1:setPosition(200, 50)
-	self:addChild(bmp1)
+	textures[1] = Texture.new("examples/Texture_Formats/image_rgb565.png", true, {format = Texture.RGB565})
+	textures[2]  = Texture.new("examples/Texture_Formats/image_rgb888.png", true, {format = Texture.RGB888})
+	textures[3]  = Texture.new("examples/Texture_Formats/image_rgba5551.png", true, {format = Texture.RGBA5551})
+	textures[4]  = Texture.new("examples/Texture_Formats/image_rgba4444.png", true, {format = Texture.RGBA4444})
+	textures[5]  = Texture.new("examples/Texture_Formats/image_rgba8888.png", true, {format = Texture.RGBA8888})
 	
-	local bmp2 = Bitmap.new(Texture.new("examples/Texture_Formats/crate.png",false, {format = TextureBase.RGBA5551}))
-	bmp2:setPosition(0, 200)
-	self:addChild(bmp2)
+	local curTexture = 1
+	local bitmap = Bitmap.new(textures[curTexture])
+	self:addChild(bitmap)
 	
-	local bmp3 = Bitmap.new(Texture.new("examples/Texture_Formats/crate.png", false, {format = TextureBase.RGBA4444}))
-	bmp3:setPosition(200, 200)
-	self:addChild(bmp3)
-	
-	local bmp4 = Bitmap.new(Texture.new("examples/Texture_Formats/crate.png", false, {format = TextureBase.RGB888}))
-	bmp4:setPosition(0, 350)
-	self:addChild(bmp4)
-	
-	local bmp4 = Bitmap.new(Texture.new("examples/Texture_Formats/crate.png", false, {format = TextureBase.RGB565}))
-	bmp4:setPosition(200, 350)
-	self:addChild(bmp4)
+	local timer = Timer.new(1000)
+	timer:addEventListener(Event.TIMER, function()
+		curTexture = curTexture + 1
+		if(curTexture > #textures) then curTexture = 1 end
+		bitmap:setTexture(textures[curTexture])
+	end)
+	timer:start()
+	self:addEventListener("exitEnd", function()
+		timer:stop()
+		timer = nil
+	end)
 end
